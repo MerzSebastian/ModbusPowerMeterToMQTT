@@ -13,7 +13,7 @@ serial_port = "/dev/ttyUSB0"
 interval = 2
 
 client = mqtt.Client()
-client.username_pw_set(username="mqtt_user",password="mqtt_password")
+client.username_pw_set(username=mqtt_user,password=mqtt_password)
 client.connect(mqtt_server_address, mqtt_server_port, 60)
 modbus = minimalmodbus.Instrument(serial_port, 1)
 modbus.serial.baudrate = 9600
