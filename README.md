@@ -1,6 +1,13 @@
 # ModbusPowerMeterToMQTT
 Small script to read modbus data from a power meter (ORNO OR-WE-517) and publish it to a mqtt broker to use it in Home Assistant
 
+## How to connect your hardware
+Get the cheapest rs-485 usb adapter on ebay. should be only a couple bucks.
+Connect the usb adapter with the power meter like this
+```
+A <=> A
+B <=> B
+```
 
 ## How to run this script?
 Frist you should install all the required python packages to run this script with the following command
