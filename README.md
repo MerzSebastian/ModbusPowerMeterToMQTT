@@ -58,79 +58,61 @@ Reboot and see if it works! :)
 Add the following to your configuration.yaml (sensor section)
 
 ```
-sensor:
-  - platform: mqtt
-    name: "power meter - voltage l1"
-    state_topic: "power-meter/voltage/l1"
-    unit_of_measurement: "V"
-  - platform: mqtt
-    name: "power meter - voltage l2"
-    state_topic: "power-meter/voltage/l2"
-    unit_of_measurement: "V"
-  - platform: mqtt
-    name: "power meter - voltage l3"
-    state_topic: "power-meter/voltage/l3"
-    unit_of_measurement: "V"
-  - platform: mqtt
-    name: "power meter - frequency"
-    state_topic: "power-meter/frequency"
-    unit_of_measurement: "Hz"
-  - platform: mqtt
-    name: "power meter - current"
-    state_topic: "power-meter/current"
-    unit_of_measurement: "A"
-  - platform: mqtt
-    name: "power meter - current l1"
-    state_topic: "power-meter/current/l1"
-    unit_of_measurement: "A"
-  - platform: mqtt
-    name: "power meter - current l2"
-    state_topic: "power-meter/current/l2"
-    unit_of_measurement: "A"
-  - platform: mqtt
-    name: "power meter - current l3"
-    state_topic: "power-meter/current/l3"
-    unit_of_measurement: "A"
-  - platform: mqtt
-    name: "power meter - wattage"
-    state_topic: "power-meter/wattage"
-    unit_of_measurement: "W"
-  - platform: mqtt
-    name: "power meter - wattage l1"
-    state_topic: "power-meter/wattage/l1"
-    unit_of_measurement: "W"
-  - platform: mqtt
-    name: "power meter - wattage l2"
-    state_topic: "power-meter/wattage/l2"
-    unit_of_measurement: "W"
-  - platform: mqtt
-    name: "power meter - wattage l3"
-    state_topic: "power-meter/wattage/l3"
-    unit_of_measurement: "W"
-  - platform: mqtt
-    name: "power meter - power-factor l1"
-    state_topic: "power-meter/power-factor/l1"
-  - platform: mqtt
-    name: "power meter - power-factor l2"
-    state_topic: "power-meter/power-factor/l2"
-  - platform: mqtt
-    name: "power meter - power-factor l3"
-    state_topic: "power-meter/power-factor/l3"
-  - platform: mqtt
-    name: "power meter - consumption"
-    state_topic: "power-meter/consumption"
-    unit_of_measurement: "kWh"
-  - platform: mqtt
-    name: "power meter - wattage l1"
-    state_topic: "power-meter/consumption/l1"
-    unit_of_measurement: "kWh"
-  - platform: mqtt
-    name: "power meter - wattage l2"
-    state_topic: "power-meter/consumption/l2"
-    unit_of_measurement: "kWh"
-  - platform: mqtt
-    name: "power meter - wattage l3"
-    state_topic: "power-meter/consumption/l3"
-    unit_of_measurement: "kWh"
+mqtt:
+  sensor:
+    - name: "power meter - voltage l1"
+      state_topic: "power-meter/voltage/l1"
+      unit_of_measurement: "V"
+    - name: "power meter - voltage l2"
+      state_topic: "power-meter/voltage/l2"
+      unit_of_measurement: "V"
+    - name: "power meter - voltage l3"
+      state_topic: "power-meter/voltage/l3"
+      unit_of_measurement: "V"
+    - name: "power meter - frequency"
+      state_topic: "power-meter/frequency"
+      unit_of_measurement: "Hz"
+    - name: "power meter - current"
+      state_topic: "power-meter/current"
+      unit_of_measurement: "A"
+    - name: "power meter - current l1"
+      state_topic: "power-meter/current/l1"
+      unit_of_measurement: "A"
+    - name: "power meter - current l2"
+      state_topic: "power-meter/current/l2"
+      unit_of_measurement: "A"
+    - name: "power meter - current l3"
+      state_topic: "power-meter/current/l3"
+      unit_of_measurement: "A"
+    - name: "power meter - wattage"
+      state_topic: "power-meter/wattage"
+      unit_of_measurement: "W"
+    - name: "power meter - wattage l1"
+      state_topic: "power-meter/wattage/l1"
+      unit_of_measurement: "W"
+    - name: "power meter - wattage l2"
+      state_topic: "power-meter/wattage/l2"
+      unit_of_measurement: "W"
+    - name: "power meter - wattage l3"
+      state_topic: "power-meter/wattage/l3"
+      unit_of_measurement: "W"
+    - name: "power meter - consumption"
+      state_topic: "power-meter/consumption"
+      unit_of_measurement: "kWh"
+    - name: "power meter - wattage l1"
+      state_topic: "power-meter/consumption/l1"
+      unit_of_measurement: "kWh"
+    - name: "power meter - wattage l2"
+      state_topic: "power-meter/consumption/l2"
+      unit_of_measurement: "kWh"
+    - name: "power meter - wattage l3"
+      state_topic: "power-meter/consumption/l3"
+      unit_of_measurement: "kWh"
+    - name: "power meter - power-factor l1"
+      state_topic: "power-meter/power-factor/l1"
+    - name: "power meter - power-factor l2"
+      state_topic: "power-meter/power-factor/l2"
+    - name: "power meter - power-factor l3"
+      state_topic: "power-meter/power-factor/l3"
 ```
 
